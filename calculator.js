@@ -11,42 +11,18 @@ var handleClick = function(event){
 	console.log(window.event);
 	var choice = window.event.target.id;
 
+		var number1 = document.getElementById("firstnum").value;
+		var number2 = document.getElementById("secondnum").value;
+		var parsednumber1 = parseFloat(number1);
+		var parsednumber2 = parseFloat(number2);
 	if(choice == "addition"){
-		var number1 = prompt("Enter First number",0);
-		var number2 = prompt("Enter Second number",0);
-		var parsednumber1 = parseFloat(number1);
-		var parsednumber2 = parseFloat(number2);
 		var answer = parsednumber1 + parsednumber2;
-		// Write info to the screen
-		//alert("the answer is " + answer);
-		document.write("the answer is " + answer);
-		consol.log("the answer is " + answer);
 	}else if(choice == "subtraction"){
-	var number1 = prompt("Enter First number",0);
-		var number2 = prompt("Enter Second number",0);
-		var parsednumber1 = parseFloat(number1);
-		var parsednumber2 = parseFloat(number2);
-		var answer = parsednumber1 - parsednumber2;
-		// Write info to the screen
-		//alert("the answer is " + answer);
-		document.write("the answer is " + answer);	
+		var answer = parsednumber1 - parsednumber2;	
 	}else if(choice == "multiplication"){
-	var number1 = prompt("Enter First number",0);
-		var number2 = prompt("Enter Second number",0);
-		var parsednumber1 = parseFloat(number1);
-		var parsednumber2 = parseFloat(number2);
 		var answer = parsednumber1 * parsednumber2;
-		// Write info to the screen
-		//alert("the answer is " + answer);
-		document.write("the answer is " + answer);
-		consol.log("the answer is " + answer);
 	}else if(choice == "division"){
-	var number1 = prompt("Enter First number",0);
-		var number2 = prompt("Enter Second number",0);
-		var parsednumber1 = parseFloat(number1);
-		var parsednumber2 = parseFloat(number2);
 		var answer = parsednumber1 / parsednumber2;
-		// Write info to the screen
-		//alert("the answer is " + answer);
-		document.write("the answer is " + answer);
-		consol.log("the answer is " + answer);}
+	}document.write("the answer is " + answer);
+		console.log("the answer is " + answer);
+}
